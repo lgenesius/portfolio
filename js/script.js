@@ -26,6 +26,20 @@ menuCollapse.forEach(item => item.addEventListener('click', function(){
     }
 }));
 
+const seeMore0 = document.querySelector('.see-more-0')
+const seeLess0 = document.querySelector('.see-less-0')
+const getVisible0 = document.querySelectorAll('.disappear-0')
+
+seeMore0.addEventListener('click', function(){
+    getVisible0.forEach(item => item.classList.toggle('disappear-0'));
+    seeMore0.classList.toggle('disappear-0');
+});
+
+seeLess0.addEventListener('click',function(){
+    getVisible0.forEach(item => item.classList.toggle('disappear-0'));
+    seeMore0.classList.toggle('disappear-0');
+});
+
 const seeMore = document.querySelector('.see-more');
 const seeLess = document.querySelector('.see-less');
 const getVisible = document.querySelectorAll('.disappear');
@@ -38,18 +52,4 @@ seeMore.addEventListener('click', function(){
 seeLess.addEventListener('click',function(){
     getVisible.forEach(item => item.classList.toggle('disappear'));
     seeMore.classList.toggle('disappear');
-});
-
-const seeMore2 = document.querySelector('.see-more-2');
-const seeLess2 = document.querySelector('.see-less-2');
-const getVisible2 = document.querySelectorAll('.disappear-2');
-
-seeMore2.addEventListener('click', function(){
-    getVisible2.forEach(item => item.classList.toggle('disappear-2'));
-    seeMore2.classList.toggle('disappear-2');
-});
-
-seeLess2.addEventListener('click',function(){
-    getVisible2.forEach(item => item.classList.toggle('disappear-2'));
-    seeMore2.classList.toggle('disappear-2');
 });
