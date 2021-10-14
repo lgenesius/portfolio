@@ -40,16 +40,16 @@ seeLess0.addEventListener('click',function(){
     seeMore0.classList.toggle('disappear-0');
 });
 
-const seeMore = document.querySelector('.see-more');
-const seeLess = document.querySelector('.see-less');
-const getVisible = document.querySelectorAll('.disappear');
+// const seeMore = document.querySelector('.see-more');
+// const seeLess = document.querySelector('.see-less');
+// const getVisible = document.querySelectorAll('.disappear');
 
-seeMore.addEventListener('click', function(){
-    getVisible.forEach(item => item.classList.toggle('disappear'));
-    seeMore.classList.toggle('disappear');
-});
+// seeMore.addEventListener('click', function(){
+//     getVisible.forEach(item => item.classList.toggle('disappear'));
+//     seeMore.classList.toggle('disappear');
+// });
 
-seeLess.addEventListener('click',function(){
-    getVisible.forEach(item => item.classList.toggle('disappear'));
-    seeMore.classList.toggle('disappear');
-});
+// seeLess.addEventListener('click',function(){
+//     getVisible.forEach(item => item.classList.toggle('disappear'));
+//     seeMore.classList.toggle('disappear');
+// });

@@ -312,7 +312,7 @@ body {
 }
 
 .portfolio-section-title{
-    margin-top: 10rem;
+    margin-top: 8rem;
     color: #00b7c2;
     font-size: 40px;
 }
@@ -353,9 +353,30 @@ body {
 }
 
 .portfolio-content p {
-    
     margin-top: 1rem;
     text-align: justify;
+}
+
+.portfolio-content ul {
+    margin-left: 20px;
+}
+
+.portfolio-content div {
+    margin-top: 1rem;
+    display: flex;
+}
+
+.portfolio-content div a {
+    text-decoration: none;
+    font-size: 15px;
+    border: 2px solid #00b7c2;
+    background-color: #00b7c2;
+    padding: 10px;
+    border-radius: 10px;
+}
+
+.second-a {
+    margin-left: 1rem;
 }
 
 .notfirst {
@@ -404,19 +425,31 @@ body {
     margin-left: 20%;
     margin-top: 1rem;
     font-size: 20px;
-    opacity: 0.7;
     font-family: 'Monda', sans-serif;
 }
 
 .contact-details{
-    width: 100%;
+    max-width: 80%;
+    margin-left: 10%;
     display: grid;
-    grid-template-columns: repeat(3,1fr);
-    align-items: center;
-    justify-content: space-between;
+    grid-template-columns: repeat(2,1fr);
     grid-gap: 2rem;
     padding-bottom: 6rem;
     margin-top: 2rem;
+}
+
+.contact-details a {
+    text-decoration: none;
+    border: 2px solid #00b7c2;
+    border-radius: 10px;
+    background-color: #00b7c2;
+    padding: 10px;
+}
+
+.contact-details div {
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .contact-details div h5{
@@ -426,10 +459,9 @@ body {
 }
 
 .contact-details div h3{
-    margin-top: 1rem;
-    font-size: 27px;
+    font-size: 22px;
     color: #ffffff;
-    opacity: 0.8;
+    margin-left: 1rem;
  }
 
 .social-media div{
@@ -441,9 +473,9 @@ body {
     align-items: center;
 }
 
-.social-media div img{
+.contact-details div img{
     width: 35px;
-    transition: 0.5s ease;
+    height: 35px;
 }
 
 .social-media div img:hover{
@@ -491,7 +523,11 @@ body {
     to {opacity: 1;}
 }
 
-@media screen and (max-width: 1278px){
+@media screen and (max-width: 1450px){
+    .contact-details{
+        max-width: 100%;
+        margin-left: 0%;
+    }
 }
 
 @media screen and (max-width: 1148px){
@@ -552,6 +588,16 @@ body {
 
     .portfolio-section-details{
         grid-template-columns: repeat(1, 1fr);
+    }
+
+    .portfolio-content {
+        max-width: 100%;
+        margin-left: 0%;
+    }
+
+    .portfolio-section{
+        max-width: 80%;
+        margin-left: 10%;
     }
 }
 
@@ -651,7 +697,7 @@ body {
      }
      
      .contact-details div h3{
-         font-size: 24px;
+         font-size: 16px;
       }
 }
 
@@ -691,8 +737,8 @@ body {
     }
 
     .about-section-details-image{
-        max-width: 100%;
-        margin-left: 0;
+        max-width: 60%;
+        margin-left: 20%;
     }
 
     .about-section-title{
@@ -735,6 +781,10 @@ body {
     
     .portfolio-section h3{
         font-size: 20px;
+    }
+
+    .portfolio-content p {
+        font-size: 14px;
     }
 
     .contact-section{
