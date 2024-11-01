@@ -1,3 +1,3 @@
 # Portfolio Website
 
-This is my latest portfolio website: https://lgenesius.github.io/portfolio/
+This is my latest personal website.
